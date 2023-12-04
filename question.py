@@ -12,7 +12,7 @@ class Question:
 
         print()
         resultat_response_correcte = False
-        reponse_int = Question.demander_reponse_numerique_utlisateur(1, len(self.choix))
+        reponse_int = Question.demander_reponse_numerique_utlisateur(self, min=1, max=len(self.choix))
         if self.choix[reponse_int - 1].lower() == self.bonne_reponse.lower():
             print("Bonne réponse")
             resultat_response_correcte = True
@@ -22,7 +22,7 @@ class Question:
         print()
         return resultat_response_correcte
 
-    def demander_reponse_numerique_utlisateur(min, max):
+    def demander_reponse_numerique_utlisateur(self, min, max):
         reponse_str = input("Votre réponse (entre " + str(min) + " et " + str(max) + ") : ")
         try:
             reponse_int = int(reponse_str)
@@ -32,4 +32,4 @@ class Question:
             print("ERREUR : Vous devez rentrer un nombre entre", min, "et", max)
         except:
             print("ERREUR : Veuillez rentrer uniquement des chiffres")
-        return demander_reponse_numerique_utlisateur(min, max)
+        return self.demander_reponse_numerique_utlisateur(min, max)

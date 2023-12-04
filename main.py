@@ -5,7 +5,7 @@ from questionnaire import Questionnaire
 questionnaire = Questionnaire(
     (
         Question("Quelle est la capitale de la France ?", ("Marseille", "Nice", "Paris", "Nantes", "Lille"), "Paris"),
-        Question("Quelle est la capitale de la Cameroun ?", ("Bafoussam", "Yaounde", "Douala", "Buea"), "Yaounde"),
+        Question("Quelle est la capitale du Cameroun ?", ("Bafoussam", "Yaounde", "Douala", "Buea"), "Yaounde"),
         Question("Quelle est la capitale de l'Italie ?", ("Rome", "Venise", "Pise", "Florence"), "Rome"),
         Question("Quelle est la capitale de la Belgique ?", ("Anvers", "Bruxelles", "Bruges", "Liège"), "Bruxelles")
     )
@@ -17,7 +17,7 @@ questionnaire.lancer()
 """
 # --- Création des objets Question ---
 q1 = Question("Quelle est la capitale de la France ?", ("Marseille", "Nice", "Paris", "Nantes", "Lille"), "Paris")
-q2 = Question("Quelle est la capitale de la Cameroun ?", ("Bafoussam", "Yaounde", "Douala", "Buea"), "Yaounde")
+q2 = Question("Quelle est la capitale du Cameroun ?", ("Bafoussam", "Yaounde", "Douala", "Buea"), "Yaounde")
 q3 = Question("Quelle est la capitale de l'Italie ?", ("Rome", "Venise", "Pise", "Florence"), "Rome")
 q4 = Question("Quelle est la capitale de la Belgique ?", ("Anvers", "Bruxelles", "Bruges", "Liège"), "Bruxelles")
 
